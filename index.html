@@ -1,23 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to kakao Talk</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!--와이파이 아이콘 나중에 작업-->
+        <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>110%</span>
-        <!--베터리 아이콘 충전중 아이콘 나중에 작업-->
+        <i class="fas fa-battery-quarter"></i>
+        <i class="fas fa-bolt"></i>
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">카카오톡 클론에 오신걸 환영합니다!</h1>
+      <p class="welcome-header__discription">
+        카카오톡 클론은 이메일 혹은 휴대전화번호를 이용하여 로그인 할수
+        있습니다.
+      </p>
+    </header>
+
+    <form id="login-from">
+      <input type="text" placeholder="이메일 혹은 휴대전화번호" />
+      <input type="password" placeholder="비밀번호" />
+      <input type="submit" value="로그인" />
+      <input type="submit" value="회원가입" />
+      <a href="#">아이디 혹은 비밀번호 찾기</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
